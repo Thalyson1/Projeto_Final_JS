@@ -1,5 +1,6 @@
 {
   "name": "projeto_final_js",
+  "type": "module",
   "version": "1.0.0",
   "description": "teste de npm",
   "main": "script.js",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/Thalyson1/Projeto_Final_JS#readme",
   "dependencies": {
+    "express": "^4.17.3",
     "lodash": "^4.17.21"
   }
 }
