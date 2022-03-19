@@ -1,26 +1,31 @@
 import express from "express";
 
-const port = 3000;
+
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+
 
 const app = express();
+const port = 3000;
 
-app.get('/', (req, res) => {
-    res.send('Hello, World!');
+app.get("/", function(req, res){
+    res.sendFile(__dirname + "/index.html");
 });
 
-app.get('/vamos', (req, res) => {
-    res.send('Vamos lá');
+app.get("/tarefa/:materia/:dificuldade", function(req, res){
+    res.send("A sua materia eh "+ req.params.materia +"<br>E a dificuldade dela eh "+req.params.dificuldade);
 });
 
-const travel = [
-    {banho: "toalha", secar: "sabonete"},
-    {comer: "frutas", beber: "água"},
-];
-
-app.get('/bora', (req, res) =>{
-    res.send(travel[1]);
+app.get("/bolo", function(req, res){
+    res.send("Deu certo +_+");
 });
 
-app.listen(port, () => {
-    console.log('Vivendo em http://localhost:' + port);
+
+
+app.listen(port, function(){
+    console.log("Servidor rodando em http://localhost:" + port);
 });
