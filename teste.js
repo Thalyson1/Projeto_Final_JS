@@ -20,6 +20,10 @@ app.get("/tarefa/:materia/:dificuldade", function(req, res){
     res.send("A sua materia eh "+ req.params.materia +"<br>E a dificuldade dela eh "+req.params.dificuldade);
 });
 
+app.get("/inicio", function(req, res){
+    res.send("Esta eh a página inicial...");
+});
+
 app.get("/bolo", function(req, res){
     res.send("Deu certo +_+");
 });
