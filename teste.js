@@ -26,7 +26,7 @@ app.get("/", function(req, res){
 
 app.post("/votoss", function(req, res){
 
-   res.send("Nome: "+req.body.votacao + " Tipo: "+req.body.tipo);
+   res.send("Nome: "+req.body.votacao + " Tipo: "+req.body.comida);
 
 });
 
