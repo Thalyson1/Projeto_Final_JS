@@ -54,9 +54,6 @@ app.get("/inicio", function(req, res){
     res.send("Esta eh a página inicial...");
 });
 
-app.get("/bolo", function(req, res){
-    res.send("Deu certo +_+");
-});
 
 
 
