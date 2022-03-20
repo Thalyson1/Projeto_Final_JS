@@ -1,5 +1,7 @@
 import express from "express";
 
+const app = express();
+const port = 3000;
 
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
@@ -8,13 +10,41 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 
+app.use(express.json());
+app.use(express.urlencoded({
+  extended: false
+}));
 
-const app = express();
-const port = 3000;
+
+
+
 
 app.get("/", function(req, res){
     res.sendFile(__dirname + "/index.html");
 });
+
+
+app.post("/votoss", function(req, res){
+
+   res.send("Nome: "+req.body.votacao + " Tipo: "+req.body.tipo);
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 app.get("/tarefa/:materia/:dificuldade", function(req, res){
     res.send("A sua materia eh "+ req.params.materia +"<br>E a dificuldade dela eh "+req.params.dificuldade);
