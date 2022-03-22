@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 
 const app = express();
 const port = 3000;
@@ -34,10 +35,19 @@ app.post("/votoss", function(req, res){
 
 
 
+const ranking = [
+    {nome: "davi", pontos: 10 },
+    {nome: "ricardo", pontos: 0 },
+    {nome: "mathias", pontos: 50 },
+    {nome: "Lara", pontos: 100 },
+]
 
 
-
-
+app.use(cors());
+app.use(express.static("public"));
+app.get("/ranking", function (req, res){
+    res.send(ranking);
+});
 
 
 
