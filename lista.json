@@ -1,12 +1,3 @@
 {
-  "musicas": [
-    {
-      "nome": "We are the champions",
-      "banda": "Queens"
-    },
-    {
-      "nome": "It's my life",
-      "banda": "Bon Jovi"
-    }
-  ]
+  "musicas": []
 }
