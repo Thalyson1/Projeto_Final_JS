@@ -51,15 +51,15 @@ let btn = document.querySelector("#inputButton");
 let btn2 = document.querySelector("#inputButton2");
 
 function adiciona2() {
-    var paragrafo = document.querySelector("#viewSessionSotorage");
     paragrafo.innerHTML = '';
+    var paragrafo = document.querySelector("#viewSessionSotorage");
     let item = document.createElement("li");
     let teste = localStorage.getItem('valueText');
 
     let texto = document.createTextNode(teste);
 
-    item.appendChild(texto);
-    paragrafo.appendChild(item);
+    item.appendChild(tex)
+
 
 
     tam_msc += localStorage.getItem("musica");

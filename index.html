@@ -11,8 +11,9 @@
     <nav>
         <div class="menu">
             <ul>
-                <li><a href="/inicio">Página Inicial</a></li>
-                <li><a href="/bolo">Integrantes</a></li>
+                <li><a href="http://localhost:3000/">Página Inicial</a></li>
+                <li><a href="http://localhost:3000/listando.html">Músicas</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
             </ul>
         </div>
     </nav>
@@ -22,6 +23,14 @@
 
         <input type="submit" value="Adicionar" onclick="adiciona()" id="botao1">
     </div>
+    <h3>Envie-nos uma de suas músicas preferidas para armazenar em nosso banco de dados</h3>
+    <form action="http://localhost:3000/enviar-musica" method="post">
+        <label for="nome">Música:</label>
+        <input type="text" name="nome" required>
+        <label for="banda">Banda:</label>
+        <input type="text" name="banda" required>
+        <button type="submit">Enviar</button>
+    </form>
 
     <script src="script.js"></script>
 </body>
