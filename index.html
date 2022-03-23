@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Site da empresa</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <nav>
         <div class="menu">
@@ -15,14 +17,13 @@
         </div>
     </nav>
 
-    <form action="http://localhost:3000/votoss" method="post">
-        <label for="votacao">nome</label>
-        <input type="text" name="votacao">
-        <label for="comida">comida favorita</label>
-        <input type="text" name="comida">
-        <button type="submit" formmethod="post">Enviar</button>
-    </form>
+    <div id="menuzinho">
+        Musica: <input type="text" name="musica" id="musica" placeholder="Informe o nome da musica"><br> Autor: <input type="text" name="autor" id="autor" placeholder=" O nome do autor"><br> Ano: <input type="text" name="ano" id="ano" placeholder="Ano de lançamento"><br>
+
+        <input type="submit" value="Adicionar" onclick="adiciona()" id="botao1">
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
