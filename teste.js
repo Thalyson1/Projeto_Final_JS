@@ -35,9 +35,6 @@ app.post("/enviar-musica", function(req, res) {
 
     fs.writeFileSync("lista.json", JSON.stringify(lista, null, 2), "utf-8");
     res.redirect("/");
-
-    fs.writeFileSync("lista.json", JSON.stringify(lista.nome, null, 2), "utf-8");
-    res.redirect("/");
 });
 
 app.get("/pegar-lista", (req, res) => {
@@ -45,8 +42,8 @@ app.get("/pegar-lista", (req, res) => {
     console.log(lista);
 });
 
-app.get("/pegar-musica", (req, res) => {
-    res.send(lista.somusc);
+app.get("/get-musica", (req, res) => {
+    res.send(lista);
     console.log(lista.somusc);
 });
 

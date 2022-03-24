@@ -1,11 +1,21 @@
 {
   "musicas": [
     {
-      "nome": "aaaaaaaaaaaaaa",
-      "banda": "a"
+      "nome": "aaaaaaaaa",
+      "banda": "aaa"
+    },
+    {
+      "nome": "ee",
+      "banda": "ee"
+    },
+    {
+      "nome": "dad",
+      "banda": "asd"
     }
   ],
   "somusica": [
-    "aaaaaaaaaaaaaa"
+    "aaaaaaaaa",
+    "ee",
+    "dad"
   ]
 }

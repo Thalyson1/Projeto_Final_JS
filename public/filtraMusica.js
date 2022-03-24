@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/pegar-musica")
+fetch("http://localhost:3000/get-musica")
     .then((response) => response.json())
     .then((json) => {
         console.log(json);
@@ -7,8 +7,13 @@ fetch("http://localhost:3000/pegar-musica")
         if (json.somusica.length > 0) {
             json.somusica.forEach(element => {
                 let novoItem = document.createElement("li");
-                novoItem.textContent = `${nome}`;
+                novoItem.textContent = json.somusica;
                 lista.appendChild(novoItem);
+
+                let array_musica = json.somusica;
+
+                console.log(array_musica);
+
             });
         }
 
