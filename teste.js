@@ -29,9 +29,14 @@ app.post("/enviar-musica", function(req, res) {
     let novaMusica = req.body;
     lista.musicas.push(novaMusica);
 
-    fs.writeFileSync("lista.json", JSON.stringify(lista, null, 2), "utf-8");
-    console.log(lista);
 
+    let somusc = req.body.nome;
+    lista.somusica.push(somusc);
+
+    fs.writeFileSync("lista.json", JSON.stringify(lista, null, 2), "utf-8");
+    res.redirect("/");
+
+    fs.writeFileSync("lista.json", JSON.stringify(lista.nome, null, 2), "utf-8");
     res.redirect("/");
 });
 
@@ -39,6 +44,12 @@ app.get("/pegar-lista", (req, res) => {
     res.send(lista);
     console.log(lista);
 });
+
+app.get("/pegar-musica", (req, res) => {
+    res.send(lista.somusc);
+    console.log(lista.somusc);
+});
+
 
 // app.post("/votoss", function(req, res){
 
@@ -60,10 +71,6 @@ app.get("/pegar-lista", (req, res) => {
 app.get("/listando.html", (req, res) => {
     res.sendFile(__dirname + "/listando.html");
 });
-
-
-
-
 
 
 app.get("/tarefa/:materia/:dificuldade", function(req, res) {

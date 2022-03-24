@@ -1,3 +1,11 @@
 {
-  "musicas": []
+  "musicas": [
+    {
+      "nome": "aaaaaaaaaaaaaa",
+      "banda": "a"
+    }
+  ],
+  "somusica": [
+    "aaaaaaaaaaaaaa"
+  ]
 }

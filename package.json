@@ -1,27 +1,27 @@
 {
-  "name": "projeto_final_js",
-  "type": "module",
-  "version": "1.0.0",
-  "description": "teste de npm",
-  "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Thalyson1/Projeto_Final_JS.git"
-  },
-  "author": "davi",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Thalyson1/Projeto_Final_JS/issues"
-  },
-  "homepage": "https://github.com/Thalyson1/Projeto_Final_JS#readme",
-  "dependencies": {
-    "body-parser": "^1.19.2",
-    "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "lodash": "^4.17.21",
-    "nodemon": "^2.0.15"
-  }
+    "name": "projeto_final_js",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "teste de npm",
+    "main": "script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Thalyson1/Projeto_Final_JS.git"
+    },
+    "author": "davi",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Thalyson1/Projeto_Final_JS/issues"
+    },
+    "homepage": "https://github.com/Thalyson1/Projeto_Final_JS#readme",
+    "dependencies": {
+        "body-parser": "^1.19.2",
+        "cors": "^2.8.5",
+        "express": "^4.17.3",
+        "lodash": "^4.17.21",
+        "nodemon": "^2.0.15"
+    }
 }
