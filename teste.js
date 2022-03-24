@@ -25,22 +25,16 @@ app.get("/", function(req, res){
 });
 
 
-app.post("/votoss", function(req, res){
-
-   res.send("Nome: "+req.body.votacao + " Tipo: "+req.body.comida);
-
-});
-
-
-
 
 
 const ranking = [
-    {nome: "davi", pontos: 10 },
-    {nome: "ricardo", pontos: 0 },
-    {nome: "mathias", pontos: 50 },
-    {nome: "Lara", pontos: 100 },
-]
+    {artista: "ELO", musica: "Hold on Tigh" },
+    {artista: "davi", musica: 10 },
+    {artista: "davi", musica: 10 },
+    {artista: "davi", musica: 10 },
+];
+
+
 
 
 app.use(cors());
@@ -51,18 +45,6 @@ app.get("/ranking", function (req, res){
 
 
 
-
-
-
-
-
-app.get("/tarefa/:materia/:dificuldade", function(req, res){
-    res.send("A sua materia eh "+ req.params.materia +"<br>E a dificuldade dela eh "+req.params.dificuldade);
-});
-
-app.get("/inicio", function(req, res){
-    res.send("Esta eh a página inicial...");
-});
 
 
 
