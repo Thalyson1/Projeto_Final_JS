@@ -29,15 +29,6 @@ app.post("/enviar-musica", function(req, res) {
     let novaMusica = req.body;
     lista.musicas.push(novaMusica);
 
-    app.post("/votoss", function(req, res) {
-
-        res.send("Nome: " + req.body.votacao + " Tipo: " + req.body.comida);
-        fs.writeFileSync("lista.json", JSON.stringify(lista, null, 2), "utf-8");
-        console.log(lista);
-
-        res.redirect("/");
-    });
-
     app.get("/pegar-lista", (req, res) => {
         res.send(lista);
         console.log(lista);
@@ -46,6 +37,14 @@ app.post("/enviar-musica", function(req, res) {
     // app.post("/votoss", function(req, res){
 
     //    res.send("Nome: "+req.body.votacao + " Tipo: "+req.body.comida);
+    //app.post("/votoss", function(req, res) {
+
+    //res.send("Nome: " + req.body.votacao + " Tipo: " + req.body.comida);
+    //fs.writeFileSync("lista.json", JSON.stringify(lista, null, 2), "utf-8");
+    //console.log(lista);
+
+    // res.redirect("/");
+    //});
 
     // });
 
