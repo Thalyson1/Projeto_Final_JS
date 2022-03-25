@@ -26,6 +26,12 @@
     border-radius: 2px;
 }
 
+.menu a:hover {
+    transition: 0.3s;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 5px #fff;
+}
+
 .paginaInicial {
     text-align: justify;
     font-size: 18px;
