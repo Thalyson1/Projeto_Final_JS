@@ -47,7 +47,6 @@ app.get("/get-musica", (req, res) => {
     console.log(lista.somusc);
 });
 
-
 // app.post("/votoss", function(req, res){
 
 //    res.send("Nome: "+req.body.votacao + " Tipo: "+req.body.comida);
@@ -69,17 +68,17 @@ app.get("/listando.html", (req, res) => {
     res.sendFile(__dirname + "/listando.html");
 });
 
-
-app.get("/tarefa/:materia/:dificuldade", function(req, res) {
-    res.send("A sua materia eh " + req.params.materia + "<br>E a dificuldade dela eh " + req.params.dificuldade);
+app.get("/integrantes.html", (req, res) => {
+    res.sendFile(__dirname + "/integrantes.html");
 });
 
-app.get("/inicio", function(req, res) {
-    res.send("Esta eh a página inicial...");
-});
+// app.get("/tarefa/:materia/:dificuldade", function(req, res) {
+//     res.send("A sua materia eh " + req.params.materia + "<br>E a dificuldade dela eh " + req.params.dificuldade);
+// });
 
-
-
+// app.get("/inicio", function(req, res) {
+//     res.send("Esta eh a página inicial...");
+// });
 
 app.listen(port, function() {
     console.log("Servidor rodando em http://localhost:" + port);
