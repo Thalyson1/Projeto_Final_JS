@@ -1,0 +1,31 @@
+{
+  "musicas": [
+    {
+      "nome": "The rising sun",
+      "banda": "Withe Buffalo"
+    },
+    {
+      "nome": "Ai calica",
+      "banda": "Desconhecido"
+    },
+    {
+      "nome": "Wrecked",
+      "banda": "Imagine Dragons"
+    },
+    {
+      "nome": "Enemy",
+      "banda": "Imagine Dragons"
+    },
+    {
+      "nome": "Che la luna",
+      "banda": "desconhecido"
+    }
+  ],
+  "somusica": [
+    "The rising sunWithe Buffalo",
+    "Ai calicaDesconhecido",
+    "WreckedImagine Dragons",
+    "EnemyImagine Dragons",
+    "Che la lunadesconhecido"
+  ]
+}
