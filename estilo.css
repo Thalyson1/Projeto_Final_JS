@@ -28,9 +28,16 @@
 /* INDEX */
 
 .index {
-    text-align: center;
+    text-align: justify;
+    font-size: 22px;
+    margin: 5%;
 }
 
 .index h1 {
-    justify-content: center;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.index p {
+    margin-bottom: 2%;
 }
