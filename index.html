@@ -17,16 +17,16 @@
             </ul>
         </div>
     </nav>
-
-    <h3>Envie-nos uma de suas músicas preferidas para armazenar em nosso banco de dados</h3>
-    <form action="http://localhost:3000/enviar-musica" method="post">
-        <label for="nome">Música:</label>
-        <input type="text" name="nome" required>
-        <label for="banda">Banda:</label>
-        <input type="text" name="banda" required>
-        <button type="submit">Enviar</button>
-    </form>
-
+    <div class="main">
+        <h3>Envie suas músicas preferidas para armazenar-mos em nosso banco de dados</h3>
+        <form action="http://localhost:3000/enviar-musica" method="post">
+            <label for="nome">Música:</label>
+            <input type="text" name="nome" required>
+            <label for="banda">Banda:</label>
+            <input type="text" name="banda" required>
+            <button id="botao" type="submit">Enviar</button>
+        </form>
+    </div>
     <script src="public/adicionaMusicas.js"></script>
     <script src="filtraMusica.js"></script>
 
