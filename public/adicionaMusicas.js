@@ -7,7 +7,7 @@ fetch("http://localhost:3000/pegar-lista")
         if (json.musicas.length > 0) {
             json.musicas.forEach(element => {
                 let novoItem = document.createElement("li");
-                novoItem.innerHTML = `<b>Música:</b> ${element.nome} <b>Banda: </b> ${element.banda}`;
+                novoItem.innerHTML = `<b>Música:</b> ${element.nome} <br><b>Banda: </b> ${element.banda}`;
                 lista.appendChild(novoItem);
             });
         } else {

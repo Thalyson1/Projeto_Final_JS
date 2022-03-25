@@ -101,3 +101,35 @@ label {
     font-size: 18px;
     display: block;
 }
+
+#caixa-de-pesquisa {
+    height: 30px;
+    width: 400px;
+    margin: 0 auto 2em;
+    padding: 10px;
+    border: solid 2px #000;
+    border-radius: 10px;
+}
+
+#caixa-de-pesquisa input {
+    float: left;
+    width: 360px;
+    height: 100%;
+    font-size: 20px;
+    outline: none;
+    border: 0;
+}
+
+#caixa-de-pesquisa img {
+    height: 100%;
+    float: right;
+}
+
+#lista {
+    width: 400px;
+    margin: 0 auto;
+}
+
+#lista li {
+    margin-bottom: 10px;
+}
