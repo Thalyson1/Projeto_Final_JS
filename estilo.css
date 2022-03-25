@@ -27,17 +27,17 @@
  
 /* INDEX */
 
-.index {
+.paginaInicial {
     text-align: justify;
     font-size: 22px;
     margin: 5%;
 }
 
-.index h1 {
+.paginaInicial h1 {
     text-align: center;
     margin-bottom: 2%;
 }
 
-.index p {
+.paginaInicial p {
     margin-bottom: 2%;
 }
