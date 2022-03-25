@@ -30,7 +30,7 @@ app.post("/enviar-musica", function(req, res) {
     lista.musicas.push(novaMusica);
 
 
-    let somusc = req.body.nome;
+    let somusc = req.body.nome + req.body.banda;
     lista.somusica.push(somusc);
 
     fs.writeFileSync("lista.json", JSON.stringify(lista, null, 2), "utf-8");

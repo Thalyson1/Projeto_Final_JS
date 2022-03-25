@@ -45,3 +45,7 @@
 #menuzinho {
     margin: 20px;
 }
+
+#pesquisa {
+    text-transform: lowercase;
+}

@@ -1,21 +1,26 @@
 {
   "musicas": [
     {
-      "nome": "aaaaaaaaa",
-      "banda": "aaa"
+      "nome": "The rising sun",
+      "banda": "Withe Buffalo"
     },
     {
-      "nome": "ee",
-      "banda": "ee"
+      "nome": "Ai calica",
+      "banda": "Desconhecido"
     },
     {
-      "nome": "dad",
-      "banda": "asd"
+      "nome": "Wrecked",
+      "banda": "Imagine Dragons"
+    },
+    {
+      "nome": "Enemy",
+      "banda": "Imagine Dragons"
     }
   ],
   "somusica": [
-    "aaaaaaaaa",
-    "ee",
-    "dad"
+    "The rising sunWithe Buffalo",
+    "Ai calicaDesconhecido",
+    "WreckedImagine Dragons",
+    "EnemyImagine Dragons"
   ]
 }
