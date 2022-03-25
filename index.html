@@ -18,6 +18,18 @@
         </div>
     </nav>
     <div class="main">
+
+        <div class="paginaInicial">
+            <h3>Site criado para o Projeto Final de Linguagens de Script</h3>
+            <p>
+                Esse site foi criado para demonstrar os conhecimentos adquiridos ao longo da disciplina de Linguagens de Script.
+            </p>
+            <h3>Funcionalidades</h3>
+            <p>
+                Através do uso de JavaScript, NodeJS e Express fizemos uma maneira de inserir músicas em uma lista. Com isso é possível filtrá-las na página "Músicas" a qualquer momento, além de descobrir novas músicas que talvez você não conheça.
+            </p>
+        </div>
+
         <h3>Envie suas músicas preferidas para armazenar-mos em nosso banco de dados</h3>
         <form action="http://localhost:3000/enviar-musica" method="post">
             <label for="nome">Música:</label>
@@ -27,9 +39,9 @@
             <button id="botao" type="submit">Enviar</button>
         </form>
     </div>
+
     <script src="public/adicionaMusicas.js"></script>
     <script src="filtraMusica.js"></script>
-
 </body>
 
 </html>
