@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Site da empresa</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <nav>
         <div class="menu">
             <ul>
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Integrantes</a></li>
+                <li><a href="http://localhost:3000/">Página Inicial</a></li>
+                <li><a href="http://localhost:3000/listando.html">Músicas</a></li>
+                <li><a href="http://localhost:3000/integrantes.html">Integrantes</a></li>
             </ul>
         </div>
     </nav>
-    <div class="paginaInicial">
-        <h1>Site criado para o Projeto Final de Linguagens de Script</h1>
-        <p>
-            Esse site foi criado para demonstrar o conhecimento adquirido ao longo da disciplina de Linguagens de Script.
-        </p>
-        <h1>Funcionalidades</h1>
-        <p>
-            Através do uso de JavaScript fizemos uma maneira de inserir músicas em uma lista. Com isso é possível filtrá-las na página "Músicas" a qualquer momento, além de descobrir novas músicas que talvez você não conheça.
-        </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, fugit! Architecto eligendi labore iste itaque sapiente tenetur facere dolorem ipsa quos, est quasi nobis voluptate quaerat hic nam, assumenda accusamus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, dicta ipsa! Eum quia perferendis repellat nihil nemo, magni commodi praesentium sit fuga repudiandae enim porro quaerat itaque. Aliquid, inventore quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique necessitatibus, earum quia exercitationem illum aperiam possimus quos ullam eius sint ut deserunt. Doloremque aspernatur qui modi velit fuga mollitia quibusdam.</p>
+    <div class="main">
+
+        <div class="paginaInicial">
+            <h3>Site criado para o Projeto Final de Linguagens de Script</h3>
+            <p>
+                Esse site foi criado para demonstrar os conhecimentos adquiridos ao longo da disciplina de Linguagens de Script.
+            </p>
+            <h3>Funcionalidades</h3>
+            <p>
+                Através do uso de JavaScript, NodeJS e Express fizemos uma maneira de inserir músicas em uma lista. Com isso é possível filtrá-las na página "Músicas" a qualquer momento, além de descobrir novas músicas que talvez você não conheça.
+            </p>
+        </div>
+
+        <h3>Envie suas músicas preferidas para armazenar-mos em nosso banco de dados</h3>
+        <form action="http://localhost:3000/enviar-musica" method="post">
+            <label for="nome">Música:</label>
+            <input type="text" name="nome" required>
+            <label for="banda">Banda:</label>
+            <input type="text" name="banda" required>
+            <button id="botao" type="submit">Enviar</button>
+        </form>
     </div>
 
-
-    <script src="script.js"></script>
+    <script src="public/adicionaMusicas.js"></script>
+    <script src="filtraMusica.js"></script>
 </body>
+
 </html>
