@@ -24,3 +24,13 @@
     color: black;
     border-radius: 2px;
 }
+ 
+/* INDEX */
+
+.index {
+    text-align: center;
+}
+
+.index h1 {
+    justify-content: center;
+}
